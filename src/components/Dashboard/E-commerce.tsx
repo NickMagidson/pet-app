@@ -18,8 +18,8 @@ const ChartThree = dynamic(() => import("@/components/Charts/ChartThree"), {
 const ECommerce: React.FC = () => {
   return (
     <>
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6 xl:grid-cols-4 2xl:gap-7.5">
-        <CardDataStats title="Total views" total="$3.456K" rate="0.43%" levelUp>
+ 
+        {/* <CardDataStats title="Total views" total="$3.456K" rate="0.43%" levelUp>
           <svg
             className="fill-primary dark:fill-white"
             width="22"
@@ -102,18 +102,36 @@ const ECommerce: React.FC = () => {
               fill=""
             />
           </svg>
-        </CardDataStats>
+        </CardDataStats> */}
+
+
+
+      <div className="grid grid-cols-1 gap-7.5 sm:grid-cols-2 xl:grid-cols-3" >
+        <div className="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
+            <a className="block px-4 pt-4" href="#">
+                <img className="rounded-t-lg m-auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCx1ZEkMv9zO5paWgDpQptpcmihY2G5Mrwag&s" alt="" />
+            </a>
+            <div className="p-6">
+                <h4 className="mb-3 text-xl font-semibold text-black hover:text-primary dark:text-white dark:hover:text-primary">Noteworthy technology acquisitions 2021</h4>
+                <p >Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+            </div>
+        </div>
       </div>
 
+
+
+
+
+   
       <div className="mt-4 grid grid-cols-12 gap-4 md:mt-6 md:gap-6 2xl:mt-7.5 2xl:gap-7.5">
-        <ChartOne />
+        {/* <ChartOne />
         <ChartTwo />
         <ChartThree />
         <MapOne />
         <div className="col-span-12 xl:col-span-8">
           <TableOne />
         </div>
-        <ChatCard />
+        <ChatCard /> */}
       </div>
     </>
   );
